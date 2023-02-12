@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="twoplugtest Suite" >
+
+<!-- <suite name="TestSuite" thread-count="1" parallel="classes" preserve-order="true">  -->
+	 	<listeners>		<!--  	packagename.classname  (for extent reports) -->
+				<listener class-name="com.utilities.Reporting"/>
+		</listeners>    
+	
+		  <test name="TestNGTest1" thread-count="5">
+				<!-- 	passing browser parameter in base class to run the desired browser -->
+			  	<parameter name="browser" value="chrome" />
+
+
+			   		<classes>
+			   					<!-- 	packagename.classname   -->
+
+
+<!--							    			<class name="com.testCases.TP_TC_001"/>-->
+<!--									  		<class name="com.testCases.TP_TC_002"/>-->
+<!--									   		<class name="com.testCases.TP_TC_003"/>-->
+						<!--			   	 	<class name="com.testCases.TP_TC_004"/>-->
+						<!--					<class name="com.testCases.TP_TC_005"/>
+                        <!-			   	 		<class name="com.testCases.TP_TC_006"/>
+                        <!-			   	 		<class name="com.testCases.TP_TC_007"/>-->
+						<!--			   	 	<class name="com.testCases.TP_TC_008"/>-->
+<!--		   	 								<class name="com.testCases.TP_TC_010"/>-->
+<!--                                            <class name="com.testCases.TP_TC_011"/>-->
+<!--                        		   	 		<class name="com.testCases.TP_TC_012"/>-->
+<!--									   	 	<class name="com.testCases.TP_TC_013"/> -->
+<!--									   	 	<class name="com.testCases.TP_TC_014"/> -->
+<!--									   	  	<class name="com.testCases.TP_TC_015"/> -->
+<!--									   	 	<class name="com.testCases.TP_TC_016"/>-->
+<!--									   	 	<class name="com.testCases.TP_TC_017"/>-->
+<!--									   		<class name="com.testCases.TP_TC_018"/>-->
+<!--									   	 	<class name="com.testCases.TP_TC_019"/>-->
+<!--									   	 	<class name="com.testCases.TP_TC_020"/>-->
+<!--									   	 	<class name="com.testCases.TP_TC_021"/>-->
+<!--									   	 	<class name="com.testCases.TP_TC_022"/>-->
+<!--									   	 	<class name="com.testCases.TP_TC_023"/>-->
+<!--									   	 	<class name="com.testCases.TP_TC_024"/>-->
+<!--									   	 	<class name="com.testCases.TP_TC_025"/>-->
+<!--									   	 	<class name="com.testCases.TP_TC_026"/>-->
+						<!--			   	 	<class name="com.testCases.TP_TC_028"/>-->
+						<!--			   	   	<class name="com.testCases.TP_TC_029"/> -->
+						<!--			   	 	<class name="com.testCases.TP_TC_035"/>-->
+						<!--			   	 	<class name="com.testCases.TP_TC_036"/>-->
+						<!--			   	 	<class name="com.testCases.TP_TC_037"/>-->
+						<!--			   	 	<class name="com.testCases.TP_TC_038"/>-->
+						<!--			   	 	<class name="com.testCases.TP_TC_041"/>-->
+						<!--			   	 	<class name="com.testCases.TP_TC_042"/>	-->
+						<!--			   	 	<class name="com.testCases.TP_TC_046"/>-->
+						<!--			   	 	<class name="com.testCases.TP_TC_047"/>	-->
+						<!--			   	 	<class name="com.testCases.TP_TC_048"/>-->
+						<!--			   	 	<class name="com.testCases.TP_TC_050"/>-->
+						<!--			  	 	<class name="com.testCases.TP_TC_051_1"/>-->
+						<!--			  		<class name="com.testCases.TP_TC_051_2"/>-->
+						<!--			  		<class name="com.testCases.TP_TC_053"/>		-->
+						<!--			   	 	<class name="com.testCases.TP_TC_054"/>-->
+						<!--			   	 	<class name="com.testCases.TP_TC_055"/>-->
+						<!--			   	 	<class name="com.testCases.TP_TC_056"/>-->
+						<!--			   	 	<class name="com.testCases.TP_TC_057"/>-->
+						<!--			   	 	<class name="com.testCases.TP_TC_058"/>-->
+						<!--			   	 	<class name="com.testCases.TP_TC_059"/>-->
+						<!--			   	 	<class name="com.testCases.TP_TC_066"/>-->
+						<!--			   	 	<class name="com.testCases.TP_TC_070"/>-->
+						<!--			   	 	<class name="com.testCases.TP_TC_072"/> -->
+						<!--			 		<class name="com.testCases.TP_TC_073"/>-->
+						<!--			   	 	<class name="com.testCases.TP_TC_074"/>-->
+						<!--			   	 	<class name="com.testCases.TP_TC_075"/>-->
+						<!--			   	 	<class name="com.testCases.TP_TC_076"/>-->
+						<!--			   	 	<class name="com.testCases.TP_TC_077"/>-->
+						<!--			   	 	<class name="com.testCases.TP_TC_078"/>-->
+						<!--			   	 	<class name="com.testCases.TP_TC_090"/>  -->
+						<!--			   	 	<class name="com.testCases.TP_TC_091"/>-->
+						<!--			   	 	<class name="com.testCases.TP_TC_092"/>-->
+						<!--			   	 	<class name="com.testCases.TP_TC_095"/>-->
+						<!--			   	 	<class name="com.testCases.TP_TC_096"/>-->
+						<!--			   	 	<class name="com.testCases.TP_TC_097"/>-->
+						<!--			   	 	<class name="com.testCases.TP_TC_098"/>-->
+						<!--			   	 	<class name="com.testCases.TP_TC_099"/>-->
+						<!--			   	 	<class name="com.testCases.TP_TC_101"/>-->
+						<!--			   	 	<class name="com.testCases.TP_TC_104"/>-->
+						<!--			   	 	<class name="com.testCases.TP_TC_105"/>-->
+						<!--			   	 	<class name="com.testCases.TP_TC_106"/>-->
+						<!--			   	 	<class name="com.testCases.TP_TC_110"/>-->
+						<!--			   		<class name="com.testCases.TP_TC_111"/>-->
+						<!--			   	 	<class name="com.testCases.TP_TC_112"/>-->
+						<!--			   	 	<class name="com.testCases.TP_TC_113"/>-->
+						<!--			   	 	<class name="com.testCases.TP_TC_114"/> -->
+						<!--			   	 	<class name="com.testCases.TP_TC_115"/>-->
+<!--									   	 	<class name="com.testCases.TP_TC_116"/>-->
+
+
+
+
+
+
+					</classes>
+
+
+		  </test>
+
+<!--			<test name="TestNGTest1" thread-count="5">-->
+<!--					<parameter name="browser" value="firefox" />-->
+
+<!--					<classes>-->
+<!--						<class name="com.testCases.TP_TC_001"/>-->
+<!--					</classes>-->
+<!--			</test>-->
+
+		</suite> <!-- Suite -->
